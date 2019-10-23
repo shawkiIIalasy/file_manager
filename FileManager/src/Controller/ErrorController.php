@@ -34,7 +34,6 @@ class ErrorController extends AppController
             'enableBeforeRedirect' => false,
         ]);
     }
-
     /**
      * beforeFilter callback.
      *
@@ -55,7 +54,7 @@ class ErrorController extends AppController
     {
         parent::beforeRender($event);
 
-        $this->viewBuilder()->setTemplatePath('Error');
+        $this->redirect('Error/error404');
     }
 
     /**
@@ -67,4 +66,12 @@ class ErrorController extends AppController
     public function afterFilter(Event $event)
     {
     }
+    public function error404()
+    {
+
+        echo $this->render();
+        exit();
+
+    }
+
 }

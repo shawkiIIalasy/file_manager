@@ -82,9 +82,6 @@ class FilesController extends AppController
             $fileArr=$this->request->getData(['name']);
             $uploadFile =$uploadPath.$fileArr['name'];
 
-            if(!file_exists($uploadPath)&&is_dir($uploadPath))
-                mkdir($uploadPath,0740);
-
             if(move_uploaded_file($fileArr['tmp_name'],$uploadFile)){
                 $file->name = $fileArr['name'];
                 $file->path = $uploadPath;

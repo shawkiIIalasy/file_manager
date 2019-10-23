@@ -41,7 +41,7 @@ $title = 'Files Manager';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-2 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= $title ?></a></h1>
+                <h1><a href="/files"><?= __('msg') ?></a></h1>
             </li>
         </ul>
         <div class="top-bar-section">
@@ -60,6 +60,8 @@ $title = 'Files Manager';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <?php echo $this->Form->create('Localizations',array('url'=>'/locale'));?>
+        <?php echo $this->Form->button('Arabic',['type'=>'Submit','name'=>'locale','value'=>"ar_JO"]); ?>
     </footer>
 </body>
 </html>

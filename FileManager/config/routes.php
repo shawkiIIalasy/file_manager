@@ -63,6 +63,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' =>  'home']);
+    $routes->connect('locale',['controller' => 'Localizations','action'=>'index']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
@@ -107,6 +108,14 @@ Router::scope('/files', function (RouteBuilder $routes) {
     $routes->connect('/view/*',['controller'=>'Files','action'=>'view']);
     $routes->connect('/delete/*',['controller'=>'Files','action'=>'delete']);
     $routes->fallbacks('DashedRoute');
+});
+Router::scope('/Error', function (RouteBuilder $routes) {
+    $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
+        'httpOnly' => true
+    ]));
+    $routes->applyMiddleware('csrf');
+    $routes->connect('/error404',['controller'=>'Error','action'=>'error404']);
+
 });
 /**
  * If you need a different set of middleware or none at all,
