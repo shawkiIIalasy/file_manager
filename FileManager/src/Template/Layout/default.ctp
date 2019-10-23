@@ -13,7 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$title = 'File Manager';
+$title = 'Files Manager';
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,15 +23,19 @@ $title = 'File Manager';
     <title>
         <?= $title ?>:
         <?= $this->fetch('title') ?>
+
     </title>
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('style.css') ?>
+    <?= $this->Html->css('bootstrap.css') ?>
+    <?= $this->Html->css('font-awesome-4.7.0/css/font-awesome.min.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <?= $this->Html->script('bootstrap.js') ?>
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
@@ -42,8 +46,11 @@ $title = 'File Manager';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
+
                 <?php if ($this->request->session()->read('Auth.User')):?>
-                <li><a  href="/auth/logout">Logout</a></li>
+                    <li><span class="fa fa-globe text-white p-3 "></span></li>
+                    <li><a  href=""><?= $this->request->session()->read('Auth.User.username')?></a></li>
+                    <li><a  href="/auth/logout">Logout</a></li>
                 <?php endif;?>
             </ul>
         </div>

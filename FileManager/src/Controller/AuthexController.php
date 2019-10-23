@@ -11,7 +11,7 @@ class AuthexController extends AppController
 {
     var $components = array('Auth');
     public function index(){
-        return $this->redirect('/');
+        return $this->redirect('/files');
     }
     public function login(){
         if($this->request->is('post')){
@@ -19,7 +19,7 @@ class AuthexController extends AppController
 
             if($user){
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl('/'));
+                return $this->redirect($this->Auth->redirectUrl('/files'));
             } else
                 $this->Flash->error('Your username or password is incorrect.');
         }

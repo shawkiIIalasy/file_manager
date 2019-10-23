@@ -40,7 +40,7 @@ class PagesController extends AppController
      */
     public function home()
     {
-        $title="File Manager";
+        $title="Files Manager";
         $this->set(compact('title'));
     }
 }

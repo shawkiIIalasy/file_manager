@@ -47,7 +47,7 @@ define('APP', ROOT . DS . APP_DIR . DS);
 define('CONFIG', ROOT . DS . 'config' . DS);
 
 /**
- * File path to the webroot directory.
+ * Files path to the webroot directory.
  *
  * To derive your webroot from your webserver change this to:
  *

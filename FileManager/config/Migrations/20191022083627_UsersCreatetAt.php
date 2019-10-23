@@ -1,7 +1,7 @@
 <?php
 use Migrations\AbstractMigration;
-use Cake\Database\Schema\TableSchema;
-class UserTable extends AbstractMigration
+
+class UsersCreatetAt extends AbstractMigration
 {
     /**
      * Change Method.
@@ -10,8 +10,7 @@ class UserTable extends AbstractMigration
      * http://docs.phinx.org/en/latest/migrations.html#the-change-method
      * @return void
      */
-
-    public function up()
+    public function change()
     {
         $users=$this->table('users');
         $users
@@ -21,12 +20,5 @@ class UserTable extends AbstractMigration
             ->addColumn('modified','datetime');
         $users->create();
         $users->addPrimaryKey('id');
-
     }
-    public function down()
-    {
-        $this->table('users')->drop();
-    }
-
-
 }

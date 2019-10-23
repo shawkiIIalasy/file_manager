@@ -98,6 +98,16 @@ Router::scope('/auth', function (RouteBuilder $routes) {
     $routes->connect('/add',['controller'=>'Signup','action'=>'add']);
     $routes->fallbacks('DashedRoute');
 });
+Router::scope('/files', function (RouteBuilder $routes) {
+    $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
+        'httpOnly' => true
+    ]));
+    $routes->applyMiddleware('csrf');
+    $routes->connect('/add',['controller'=>'Files','action'=>'add']);
+    $routes->connect('/view/*',['controller'=>'Files','action'=>'view']);
+    $routes->connect('/delete/*',['controller'=>'Files','action'=>'delete']);
+    $routes->fallbacks('DashedRoute');
+});
 /**
  * If you need a different set of middleware or none at all,
  * open new scope and define routes there.
