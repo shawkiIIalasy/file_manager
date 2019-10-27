@@ -64,7 +64,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' =>  'home']);
     $routes->connect('locale',['controller' => 'Localizations','action'=>'index']);
-
+    $routes->connect('notification',['controller'=>'notifications','action'=>'index']);
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
@@ -107,6 +107,7 @@ Router::scope('/files', function (RouteBuilder $routes) {
     $routes->connect('/add',['controller'=>'Files','action'=>'add']);
     $routes->connect('/view/*',['controller'=>'Files','action'=>'view']);
     $routes->connect('/delete/*',['controller'=>'Files','action'=>'delete']);
+    $routes->connect('/deleteAll/*',['controller'=>'Files','action'=>'deleteAll']);
     $routes->fallbacks('DashedRoute');
 });
 Router::scope('/Error', function (RouteBuilder $routes) {
@@ -117,6 +118,7 @@ Router::scope('/Error', function (RouteBuilder $routes) {
     $routes->connect('/error404',['controller'=>'Error','action'=>'error404']);
 
 });
+
 /**
  * If you need a different set of middleware or none at all,
  * open new scope and define routes there.

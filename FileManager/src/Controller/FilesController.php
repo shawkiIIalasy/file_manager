@@ -2,8 +2,11 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
+use Cake\I18n\I18n;
 use phpDocumentor\Reflection\File;
 use Cake\Mailer\Email;
+use App\View\Helper;
 /**
  * Files Controller
  *
@@ -13,15 +16,15 @@ use Cake\Mailer\Email;
  */
 class FilesController extends AppController
 {
+
     public function initialize(){
         parent::initialize();
 
         // Include the FlashComponent
         $this->loadComponent('Flash');
-
-        // Load Files model
+        $this->loadComponent('Gmail');
+        $this->loadComponent('FileUpload');
         $this->loadModel('Files');
-
     }
     /**
      * Index method
@@ -38,6 +41,8 @@ class FilesController extends AppController
         $userFiles = $this->Files->find()->contain(['Users'])->where('Files.user_id='.$userId);
 
         $files = $this->paginate($userFiles);
+
+
 
         $this->set(compact('files'));
     }
@@ -75,39 +80,31 @@ class FilesController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
     public function add()
-    {   $uploadPath=WWW_ROOT.DS.'upload/files/';
+    {
         $file = $this->Files->newEntity();
         if ($this->request->is('post')) {
-            $file = $this->Files->patchEntity($file, $this->request->getData());
-            $fileArr=$this->request->getData(['name']);
-            $uploadFile =$uploadPath.$fileArr['name'];
 
-            if(move_uploaded_file($fileArr['tmp_name'],$uploadFile)){
+            $file = $this->Files->patchEntity($file, $this->request->getData('name'));
+            $fileArr=$this->request->getData(['name']);
+            if($this->FileUpload->file($fileArr['name'],$fileArr['tmp_name'])){
                 $file->name = $fileArr['name'];
-                $file->path = $uploadPath;
+                $file->path = $this->FileUpload->getPath();
                 $file->user_id=$this->request->getSession()->read('Auth.User.id');
-                $file->created = date("Y-m-d H:i:s");
-                $file->modified = date("Y-m-d H:i:s");
                 if ($this->Files->save($file)) {
+
+                    $gmail=$this->Auth->user('username');
+                    $this->Gmail->sentToGmail($gmail,"Upload New File","We Need to tell you got new file in your cloud".$file->name);
                     $this->Flash->success(__('File has been uploaded and inserted successfully.'));
+                    return $this->redirect(['action' => 'index']);
                 }else{
-                    $this->Flash->error(__('Unable to upload file1, please try again.'));
+                    $this->Flash->error(__('Unable to upload file, please try again.'));
                 }
             }else{
-                $this->Flash->error(__('Unable to upload file2, please try again.'));
+                $this->Flash->error(__('Unable to upload file, please try again.'));
             }
 
-            if ($this->Files->save($file)) {
-                $this->Flash->success(__('The file has been saved.'));
-                $email=new Email('gmail');
-                $email->addTo($this->Auth->user('username'))->setSubject('Notify Upload New File')->send('We Need to tell you got new file in your cloud  
-                    File is'.$file->name);
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The file could not be saved. Please, try again.'));
         }
         $users = $this->Files->Users->find();
-
         $this->set(compact('file', 'users'));
     }
 
@@ -153,6 +150,24 @@ class FilesController extends AppController
             $this->Flash->error(__('The file could not be deleted. Please, try again.'));
         }
 
+        return $this->redirect(['action' => 'index']);
+    }
+    public function deleteAll()
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $files=$this->request->getData('select');
+        $filesSelected=array();
+        foreach ($files as $fileIndex =>$fileId)
+        {
+            if($fileId>0 && $fileIndex>0)
+                $filesSelected[]=$fileId;
+        }
+        //var_dump($filesSelected);die();
+        if ($this->Files->deleteAll(['Files.id IN'=>$filesSelected])) {
+            $this->Flash->success(__('The file has been deleted.'));
+        } else {
+            $this->Flash->error(__('The file/s could not be deleted. Please, try again.'));
+        }
         return $this->redirect(['action' => 'index']);
     }
 }

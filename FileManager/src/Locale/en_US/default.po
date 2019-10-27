@@ -1,2 +1,6 @@
 msgid "msg"
 msgstr "File Manager"
+msgid "Users"
+msgstr "Users"
+msgid "File"
+msgstr "File"

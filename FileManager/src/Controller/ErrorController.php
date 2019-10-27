@@ -21,8 +21,10 @@ use Cake\Event\Event;
  *
  * Controller used by ExceptionRenderer to render error responses.
  */
+
 class ErrorController extends AppController
 {
+
     /**
      * Initialization hook method.
      *
@@ -33,6 +35,7 @@ class ErrorController extends AppController
         $this->loadComponent('RequestHandler', [
             'enableBeforeRedirect' => false,
         ]);
+
     }
     /**
      * beforeFilter callback.
@@ -53,8 +56,9 @@ class ErrorController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
+        $request=$this->request->here();
 
-        $this->redirect('Error/error404');
+        $this->redirect(['controller'=>'Error','action'=>'error404','request'=>$request]);
     }
 
     /**
@@ -68,7 +72,8 @@ class ErrorController extends AppController
     }
     public function error404()
     {
-
+        $url=$this->request->getQuery('request');
+        $this->set('url',$url);
         echo $this->render();
         exit();
 

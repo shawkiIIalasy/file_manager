@@ -1,0 +1,645 @@
+<pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a3c45-trace').style.display = (document.getElementById('cakeErr5daefe79a3c45-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (512)</a>: Unable to emit headers. Headers sent in file= line=0 [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>51</b>]<div id="cakeErr5daefe79a3c45-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a3c45-code').style.display = (document.getElementById('cakeErr5daefe79a3c45-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a3c45-context').style.display = (document.getElementById('cakeErr5daefe79a3c45-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5daefe79a3c45-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">)&nbsp;{</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$line</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$context</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></pre><pre id="cakeErr5daefe79a3c45-context" class="cake-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	&#039;status&#039; =&gt; (int) 200,
+	&#039;contentType&#039; =&gt; &#039;text/html&#039;,
+	&#039;headers&#039; =&gt; [
+		&#039;Content-Type&#039; =&gt; [
+			[maximum depth reached]
+		],
+		&#039;X-DEBUGKIT-ID&#039; =&gt; [
+			[maximum depth reached]
+		]
+	],
+	&#039;file&#039; =&gt; null,
+	&#039;fileRange&#039; =&gt; [],
+	&#039;cookies&#039; =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	&#039;cacheDirectives&#039; =&gt; [],
+	&#039;body&#039; =&gt; &#039;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;
+        Files Manager:
+        Files    &lt;/title&gt;
+    &lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;icon&quot;/&gt;&lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;shortcut icon&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/base.css&quot;/&gt;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;/&gt;
+            &lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class=&quot;top-bar expanded&quot; data-topbar role=&quot;navigation&quot;&gt;
+        &lt;ul class=&quot;title-area large-2 medium-4 columns&quot;&gt;
+            &lt;li class=&quot;name&quot;&gt;
+                &lt;h1&gt;&lt;a href=&quot;&quot;&gt;Files Manager&lt;/a&gt;&lt;/h1&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;top-bar-section&quot;&gt;
+            &lt;ul class=&quot;right&quot;&gt;
+
+                                    &lt;li&gt;&lt;a  href=&quot;&quot;&gt;ahmed&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a  href=&quot;/auth/logout&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+        &lt;div class=&quot;container clearfix&quot;&gt;
+        &lt;pre class=&quot;cake-error&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;);&quot;&gt;&lt;b&gt;Warning&lt;/b&gt; (2)&lt;/a&gt;: readfile(Employee Information - Shawky.pdf) [&amp;lt;a href=&amp;#039;https://secure.php.net/function.readfile&amp;#039;&amp;gt;function.readfile&amp;lt;/a&amp;gt;]: failed to open stream: No such file or directory [&lt;b&gt;APP/Template/Files/view.ctp&lt;/b&gt;, line &lt;b&gt;26&lt;/b&gt;]&lt;div id=&quot;cakeErr5daefe7996192-trace&quot; class=&quot;cake-stack-trace&quot; style=&quot;display: none;&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Code&lt;/a&gt; &lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Context&lt;/a&gt;&lt;pre id=&quot;cakeErr5daefe7996192-code&quot; class=&quot;cake-code-dump&quot; style=&quot;display: none;&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;if&amp;nbsp;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;)&amp;nbsp;{&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;span class=&quot;code-highlight&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;return&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$code&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$message&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$file&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$line&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$context&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre id=&quot;cakeErr5daefe7996192-context&quot; class=&quot;cake-context&quot; style=&quot;display: none;&quot;&gt;$viewFile = &amp;#039;/var/www/html/file_manager/FileManager/src/Template/Files/view.ctp&amp;#039;
+$dataForView = [
+	&amp;#039;file&amp;#039; =&amp;gt; object(App\Model\Entity\File) {
+
+		&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+		&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+		&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+		&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+		&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+		&amp;#039;[new]&amp;#039; =&amp;gt; false,
+		&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+			[maximum depth reached]
+		],
+		&amp;#039;[dirty]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[original]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[virtual]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+		&amp;#039;[errors]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[invalid]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+	
+	},
+	&amp;#039;type&amp;#039; =&amp;gt; (int) 3
+]
+$file = object(App\Model\Entity\File) {
+
+	&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+	&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+	&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+	&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+	&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+	&amp;#039;[new]&amp;#039; =&amp;gt; false,
+	&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+		&amp;#039;name&amp;#039; =&amp;gt; true,
+		&amp;#039;path&amp;#039; =&amp;gt; true,
+		&amp;#039;user_id&amp;#039; =&amp;gt; true,
+		&amp;#039;created&amp;#039; =&amp;gt; true,
+		&amp;#039;modified&amp;#039; =&amp;gt; true,
+		&amp;#039;user&amp;#039; =&amp;gt; true
+	],
+	&amp;#039;[dirty]&amp;#039; =&amp;gt; [],
+	&amp;#039;[original]&amp;#039; =&amp;gt; [],
+	&amp;#039;[virtual]&amp;#039; =&amp;gt; [],
+	&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+	&amp;#039;[errors]&amp;#039; =&amp;gt; [],
+	&amp;#039;[invalid]&amp;#039; =&amp;gt; [],
+	&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+
+}
+$type = (int) 3&lt;/pre&gt;&lt;pre class=&quot;stack-trace&quot;&gt;Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+readfile - [internal], line ??
+include - APP/Template/Files/view.ctp, line 26
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1418
+Cake\View\View::_render() - CORE/src/View/View.php, line 1379
+Cake\View\View::render() - CORE/src/View/View.php, line 879
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 795
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [&lt;a href=&#039;https://secure.php.net/function.file-put-contents&#039;&gt;function.file-put-contents&lt;/a&gt;]: failed to open stream: Permission denied in &lt;b&gt;/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php&lt;/b&gt; on line &lt;b&gt;132&lt;/b&gt;&lt;br /&gt;
+        &lt;/div&gt;
+    &lt;footer&gt;
+    &lt;/footer&gt;
+&lt;script id=&quot;__debug_kit&quot; data-id=&quot;946fcc3d-9f09-4280-b5af-a2ab0a58d07a&quot; data-url=&quot;http://localhost:8765/&quot; src=&quot;/debug_kit/js/toolbar.js?1570586134&quot;&gt;&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+&#039;
+
+}
+$maxBufferLength = (int) 8192
+$file = &#039;&#039;
+$line = (int) 0
+$message = &#039;Unable to emit headers. Headers sent in file= line=0&#039;</pre><pre class="stack-trace">Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40</pre></div></pre><br />
+<b>Warning</b>:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [<a href='https://secure.php.net/function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in <b>/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php</b> on line <b>132</b><br />
+<pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a3fea-trace').style.display = (document.getElementById('cakeErr5daefe79a3fea-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: Cannot modify header information - headers already sent [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>152</b>]<div id="cakeErr5daefe79a3fea-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a3fea-code').style.display = (document.getElementById('cakeErr5daefe79a3fea-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a3fea-context').style.display = (document.getElementById('cakeErr5daefe79a3fea-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5daefe79a3fea-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">)&nbsp;{</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$line</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$context</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></pre><pre id="cakeErr5daefe79a3fea-context" class="cake-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	&#039;status&#039; =&gt; (int) 200,
+	&#039;contentType&#039; =&gt; &#039;text/html&#039;,
+	&#039;headers&#039; =&gt; [
+		&#039;Content-Type&#039; =&gt; [
+			[maximum depth reached]
+		],
+		&#039;X-DEBUGKIT-ID&#039; =&gt; [
+			[maximum depth reached]
+		]
+	],
+	&#039;file&#039; =&gt; null,
+	&#039;fileRange&#039; =&gt; [],
+	&#039;cookies&#039; =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	&#039;cacheDirectives&#039; =&gt; [],
+	&#039;body&#039; =&gt; &#039;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;
+        Files Manager:
+        Files    &lt;/title&gt;
+    &lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;icon&quot;/&gt;&lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;shortcut icon&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/base.css&quot;/&gt;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;/&gt;
+            &lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class=&quot;top-bar expanded&quot; data-topbar role=&quot;navigation&quot;&gt;
+        &lt;ul class=&quot;title-area large-2 medium-4 columns&quot;&gt;
+            &lt;li class=&quot;name&quot;&gt;
+                &lt;h1&gt;&lt;a href=&quot;&quot;&gt;Files Manager&lt;/a&gt;&lt;/h1&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;top-bar-section&quot;&gt;
+            &lt;ul class=&quot;right&quot;&gt;
+
+                                    &lt;li&gt;&lt;a  href=&quot;&quot;&gt;ahmed&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a  href=&quot;/auth/logout&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+        &lt;div class=&quot;container clearfix&quot;&gt;
+        &lt;pre class=&quot;cake-error&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;);&quot;&gt;&lt;b&gt;Warning&lt;/b&gt; (2)&lt;/a&gt;: readfile(Employee Information - Shawky.pdf) [&amp;lt;a href=&amp;#039;https://secure.php.net/function.readfile&amp;#039;&amp;gt;function.readfile&amp;lt;/a&amp;gt;]: failed to open stream: No such file or directory [&lt;b&gt;APP/Template/Files/view.ctp&lt;/b&gt;, line &lt;b&gt;26&lt;/b&gt;]&lt;div id=&quot;cakeErr5daefe7996192-trace&quot; class=&quot;cake-stack-trace&quot; style=&quot;display: none;&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Code&lt;/a&gt; &lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Context&lt;/a&gt;&lt;pre id=&quot;cakeErr5daefe7996192-code&quot; class=&quot;cake-code-dump&quot; style=&quot;display: none;&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;if&amp;nbsp;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;)&amp;nbsp;{&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;span class=&quot;code-highlight&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;return&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$code&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$message&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$file&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$line&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$context&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre id=&quot;cakeErr5daefe7996192-context&quot; class=&quot;cake-context&quot; style=&quot;display: none;&quot;&gt;$viewFile = &amp;#039;/var/www/html/file_manager/FileManager/src/Template/Files/view.ctp&amp;#039;
+$dataForView = [
+	&amp;#039;file&amp;#039; =&amp;gt; object(App\Model\Entity\File) {
+
+		&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+		&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+		&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+		&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+		&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+		&amp;#039;[new]&amp;#039; =&amp;gt; false,
+		&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+			[maximum depth reached]
+		],
+		&amp;#039;[dirty]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[original]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[virtual]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+		&amp;#039;[errors]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[invalid]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+	
+	},
+	&amp;#039;type&amp;#039; =&amp;gt; (int) 3
+]
+$file = object(App\Model\Entity\File) {
+
+	&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+	&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+	&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+	&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+	&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+	&amp;#039;[new]&amp;#039; =&amp;gt; false,
+	&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+		&amp;#039;name&amp;#039; =&amp;gt; true,
+		&amp;#039;path&amp;#039; =&amp;gt; true,
+		&amp;#039;user_id&amp;#039; =&amp;gt; true,
+		&amp;#039;created&amp;#039; =&amp;gt; true,
+		&amp;#039;modified&amp;#039; =&amp;gt; true,
+		&amp;#039;user&amp;#039; =&amp;gt; true
+	],
+	&amp;#039;[dirty]&amp;#039; =&amp;gt; [],
+	&amp;#039;[original]&amp;#039; =&amp;gt; [],
+	&amp;#039;[virtual]&amp;#039; =&amp;gt; [],
+	&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+	&amp;#039;[errors]&amp;#039; =&amp;gt; [],
+	&amp;#039;[invalid]&amp;#039; =&amp;gt; [],
+	&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+
+}
+$type = (int) 3&lt;/pre&gt;&lt;pre class=&quot;stack-trace&quot;&gt;Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+readfile - [internal], line ??
+include - APP/Template/Files/view.ctp, line 26
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1418
+Cake\View\View::_render() - CORE/src/View/View.php, line 1379
+Cake\View\View::render() - CORE/src/View/View.php, line 879
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 795
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [&lt;a href=&#039;https://secure.php.net/function.file-put-contents&#039;&gt;function.file-put-contents&lt;/a&gt;]: failed to open stream: Permission denied in &lt;b&gt;/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php&lt;/b&gt; on line &lt;b&gt;132&lt;/b&gt;&lt;br /&gt;
+        &lt;/div&gt;
+    &lt;footer&gt;
+    &lt;/footer&gt;
+&lt;script id=&quot;__debug_kit&quot; data-id=&quot;946fcc3d-9f09-4280-b5af-a2ab0a58d07a&quot; data-url=&quot;http://localhost:8765/&quot; src=&quot;/debug_kit/js/toolbar.js?1570586134&quot;&gt;&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+&#039;
+
+}
+$reasonPhrase = &#039;OK&#039;</pre><pre class="stack-trace">Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40</pre></div></pre><br />
+<b>Warning</b>:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [<a href='https://secure.php.net/function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in <b>/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php</b> on line <b>132</b><br />
+<pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a436e-trace').style.display = (document.getElementById('cakeErr5daefe79a436e-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: Cannot modify header information - headers already sent [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>185</b>]<div id="cakeErr5daefe79a436e-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a436e-code').style.display = (document.getElementById('cakeErr5daefe79a436e-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a436e-context').style.display = (document.getElementById('cakeErr5daefe79a436e-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5daefe79a436e-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">)&nbsp;{</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$line</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$context</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></pre><pre id="cakeErr5daefe79a436e-context" class="cake-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	&#039;status&#039; =&gt; (int) 200,
+	&#039;contentType&#039; =&gt; &#039;text/html&#039;,
+	&#039;headers&#039; =&gt; [
+		&#039;Content-Type&#039; =&gt; [
+			[maximum depth reached]
+		],
+		&#039;X-DEBUGKIT-ID&#039; =&gt; [
+			[maximum depth reached]
+		]
+	],
+	&#039;file&#039; =&gt; null,
+	&#039;fileRange&#039; =&gt; [],
+	&#039;cookies&#039; =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	&#039;cacheDirectives&#039; =&gt; [],
+	&#039;body&#039; =&gt; &#039;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;
+        Files Manager:
+        Files    &lt;/title&gt;
+    &lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;icon&quot;/&gt;&lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;shortcut icon&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/base.css&quot;/&gt;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;/&gt;
+            &lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class=&quot;top-bar expanded&quot; data-topbar role=&quot;navigation&quot;&gt;
+        &lt;ul class=&quot;title-area large-2 medium-4 columns&quot;&gt;
+            &lt;li class=&quot;name&quot;&gt;
+                &lt;h1&gt;&lt;a href=&quot;&quot;&gt;Files Manager&lt;/a&gt;&lt;/h1&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;top-bar-section&quot;&gt;
+            &lt;ul class=&quot;right&quot;&gt;
+
+                                    &lt;li&gt;&lt;a  href=&quot;&quot;&gt;ahmed&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a  href=&quot;/auth/logout&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+        &lt;div class=&quot;container clearfix&quot;&gt;
+        &lt;pre class=&quot;cake-error&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;);&quot;&gt;&lt;b&gt;Warning&lt;/b&gt; (2)&lt;/a&gt;: readfile(Employee Information - Shawky.pdf) [&amp;lt;a href=&amp;#039;https://secure.php.net/function.readfile&amp;#039;&amp;gt;function.readfile&amp;lt;/a&amp;gt;]: failed to open stream: No such file or directory [&lt;b&gt;APP/Template/Files/view.ctp&lt;/b&gt;, line &lt;b&gt;26&lt;/b&gt;]&lt;div id=&quot;cakeErr5daefe7996192-trace&quot; class=&quot;cake-stack-trace&quot; style=&quot;display: none;&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Code&lt;/a&gt; &lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Context&lt;/a&gt;&lt;pre id=&quot;cakeErr5daefe7996192-code&quot; class=&quot;cake-code-dump&quot; style=&quot;display: none;&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;if&amp;nbsp;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;)&amp;nbsp;{&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;span class=&quot;code-highlight&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;return&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$code&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$message&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$file&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$line&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$context&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre id=&quot;cakeErr5daefe7996192-context&quot; class=&quot;cake-context&quot; style=&quot;display: none;&quot;&gt;$viewFile = &amp;#039;/var/www/html/file_manager/FileManager/src/Template/Files/view.ctp&amp;#039;
+$dataForView = [
+	&amp;#039;file&amp;#039; =&amp;gt; object(App\Model\Entity\File) {
+
+		&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+		&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+		&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+		&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+		&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+		&amp;#039;[new]&amp;#039; =&amp;gt; false,
+		&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+			[maximum depth reached]
+		],
+		&amp;#039;[dirty]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[original]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[virtual]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+		&amp;#039;[errors]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[invalid]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+	
+	},
+	&amp;#039;type&amp;#039; =&amp;gt; (int) 3
+]
+$file = object(App\Model\Entity\File) {
+
+	&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+	&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+	&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+	&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+	&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+	&amp;#039;[new]&amp;#039; =&amp;gt; false,
+	&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+		&amp;#039;name&amp;#039; =&amp;gt; true,
+		&amp;#039;path&amp;#039; =&amp;gt; true,
+		&amp;#039;user_id&amp;#039; =&amp;gt; true,
+		&amp;#039;created&amp;#039; =&amp;gt; true,
+		&amp;#039;modified&amp;#039; =&amp;gt; true,
+		&amp;#039;user&amp;#039; =&amp;gt; true
+	],
+	&amp;#039;[dirty]&amp;#039; =&amp;gt; [],
+	&amp;#039;[original]&amp;#039; =&amp;gt; [],
+	&amp;#039;[virtual]&amp;#039; =&amp;gt; [],
+	&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+	&amp;#039;[errors]&amp;#039; =&amp;gt; [],
+	&amp;#039;[invalid]&amp;#039; =&amp;gt; [],
+	&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+
+}
+$type = (int) 3&lt;/pre&gt;&lt;pre class=&quot;stack-trace&quot;&gt;Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+readfile - [internal], line ??
+include - APP/Template/Files/view.ctp, line 26
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1418
+Cake\View\View::_render() - CORE/src/View/View.php, line 1379
+Cake\View\View::render() - CORE/src/View/View.php, line 879
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 795
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [&lt;a href=&#039;https://secure.php.net/function.file-put-contents&#039;&gt;function.file-put-contents&lt;/a&gt;]: failed to open stream: Permission denied in &lt;b&gt;/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php&lt;/b&gt; on line &lt;b&gt;132&lt;/b&gt;&lt;br /&gt;
+        &lt;/div&gt;
+    &lt;footer&gt;
+    &lt;/footer&gt;
+&lt;script id=&quot;__debug_kit&quot; data-id=&quot;946fcc3d-9f09-4280-b5af-a2ab0a58d07a&quot; data-url=&quot;http://localhost:8765/&quot; src=&quot;/debug_kit/js/toolbar.js?1570586134&quot;&gt;&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+&#039;
+
+}
+$cookies = []
+$values = [
+	(int) 0 =&gt; &#039;text/html; charset=UTF-8&#039;
+]
+$name = &#039;Content-Type&#039;
+$first = true
+$value = &#039;text/html; charset=UTF-8&#039;</pre><pre class="stack-trace">Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40</pre></div></pre><br />
+<b>Warning</b>:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [<a href='https://secure.php.net/function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in <b>/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php</b> on line <b>132</b><br />
+<pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a485f-trace').style.display = (document.getElementById('cakeErr5daefe79a485f-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: Cannot modify header information - headers already sent [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>185</b>]<div id="cakeErr5daefe79a485f-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a485f-code').style.display = (document.getElementById('cakeErr5daefe79a485f-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe79a485f-context').style.display = (document.getElementById('cakeErr5daefe79a485f-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5daefe79a485f-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">)&nbsp;{</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$line</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$context</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></pre><pre id="cakeErr5daefe79a485f-context" class="cake-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	&#039;status&#039; =&gt; (int) 200,
+	&#039;contentType&#039; =&gt; &#039;text/html&#039;,
+	&#039;headers&#039; =&gt; [
+		&#039;Content-Type&#039; =&gt; [
+			[maximum depth reached]
+		],
+		&#039;X-DEBUGKIT-ID&#039; =&gt; [
+			[maximum depth reached]
+		]
+	],
+	&#039;file&#039; =&gt; null,
+	&#039;fileRange&#039; =&gt; [],
+	&#039;cookies&#039; =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	&#039;cacheDirectives&#039; =&gt; [],
+	&#039;body&#039; =&gt; &#039;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;
+        Files Manager:
+        Files    &lt;/title&gt;
+    &lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;icon&quot;/&gt;&lt;link href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;shortcut icon&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/base.css&quot;/&gt;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;/&gt;
+            &lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class=&quot;top-bar expanded&quot; data-topbar role=&quot;navigation&quot;&gt;
+        &lt;ul class=&quot;title-area large-2 medium-4 columns&quot;&gt;
+            &lt;li class=&quot;name&quot;&gt;
+                &lt;h1&gt;&lt;a href=&quot;&quot;&gt;Files Manager&lt;/a&gt;&lt;/h1&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;top-bar-section&quot;&gt;
+            &lt;ul class=&quot;right&quot;&gt;
+
+                                    &lt;li&gt;&lt;a  href=&quot;&quot;&gt;ahmed&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a  href=&quot;/auth/logout&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+        &lt;div class=&quot;container clearfix&quot;&gt;
+        &lt;pre class=&quot;cake-error&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-trace&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;);&quot;&gt;&lt;b&gt;Warning&lt;/b&gt; (2)&lt;/a&gt;: readfile(Employee Information - Shawky.pdf) [&amp;lt;a href=&amp;#039;https://secure.php.net/function.readfile&amp;#039;&amp;gt;function.readfile&amp;lt;/a&amp;gt;]: failed to open stream: No such file or directory [&lt;b&gt;APP/Template/Files/view.ctp&lt;/b&gt;, line &lt;b&gt;26&lt;/b&gt;]&lt;div id=&quot;cakeErr5daefe7996192-trace&quot; class=&quot;cake-stack-trace&quot; style=&quot;display: none;&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-code&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Code&lt;/a&gt; &lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display = (document.getElementById(&#039;cakeErr5daefe7996192-context&#039;).style.display == &#039;none&#039; ? &#039;&#039; : &#039;none&#039;)&quot;&gt;Context&lt;/a&gt;&lt;pre id=&quot;cakeErr5daefe7996192-code&quot; class=&quot;cake-code-dump&quot; style=&quot;display: none;&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;if&amp;nbsp;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;)&amp;nbsp;{&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;span class=&quot;code-highlight&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;return&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$previousHandler&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$code&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$message&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$file&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$line&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$context&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre id=&quot;cakeErr5daefe7996192-context&quot; class=&quot;cake-context&quot; style=&quot;display: none;&quot;&gt;$viewFile = &amp;#039;/var/www/html/file_manager/FileManager/src/Template/Files/view.ctp&amp;#039;
+$dataForView = [
+	&amp;#039;file&amp;#039; =&amp;gt; object(App\Model\Entity\File) {
+
+		&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+		&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+		&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+		&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+		&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+		&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+		&amp;#039;[new]&amp;#039; =&amp;gt; false,
+		&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+			[maximum depth reached]
+		],
+		&amp;#039;[dirty]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[original]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[virtual]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+		&amp;#039;[errors]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[invalid]&amp;#039; =&amp;gt; [[maximum depth reached]],
+		&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+	
+	},
+	&amp;#039;type&amp;#039; =&amp;gt; (int) 3
+]
+$file = object(App\Model\Entity\File) {
+
+	&amp;#039;id&amp;#039; =&amp;gt; (int) 8,
+	&amp;#039;name&amp;#039; =&amp;gt; &amp;#039;Employee Information - Shawky.pdf&amp;#039;,
+	&amp;#039;path&amp;#039; =&amp;gt; &amp;#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&amp;#039;,
+	&amp;#039;user_id&amp;#039; =&amp;gt; (int) 1,
+	&amp;#039;created&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;modified&amp;#039; =&amp;gt; object(Cake\I18n\FrozenTime) {},
+	&amp;#039;user&amp;#039; =&amp;gt; object(App\Model\Entity\User) {},
+	&amp;#039;[new]&amp;#039; =&amp;gt; false,
+	&amp;#039;[accessible]&amp;#039; =&amp;gt; [
+		&amp;#039;name&amp;#039; =&amp;gt; true,
+		&amp;#039;path&amp;#039; =&amp;gt; true,
+		&amp;#039;user_id&amp;#039; =&amp;gt; true,
+		&amp;#039;created&amp;#039; =&amp;gt; true,
+		&amp;#039;modified&amp;#039; =&amp;gt; true,
+		&amp;#039;user&amp;#039; =&amp;gt; true
+	],
+	&amp;#039;[dirty]&amp;#039; =&amp;gt; [],
+	&amp;#039;[original]&amp;#039; =&amp;gt; [],
+	&amp;#039;[virtual]&amp;#039; =&amp;gt; [],
+	&amp;#039;[hasErrors]&amp;#039; =&amp;gt; false,
+	&amp;#039;[errors]&amp;#039; =&amp;gt; [],
+	&amp;#039;[invalid]&amp;#039; =&amp;gt; [],
+	&amp;#039;[repository]&amp;#039; =&amp;gt; &amp;#039;Files&amp;#039;
+
+}
+$type = (int) 3&lt;/pre&gt;&lt;pre class=&quot;stack-trace&quot;&gt;Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+readfile - [internal], line ??
+include - APP/Template/Files/view.ctp, line 26
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1418
+Cake\View\View::_render() - CORE/src/View/View.php, line 1379
+Cake\View\View::render() - CORE/src/View/View.php, line 879
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 795
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [&lt;a href=&#039;https://secure.php.net/function.file-put-contents&#039;&gt;function.file-put-contents&lt;/a&gt;]: failed to open stream: Permission denied in &lt;b&gt;/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php&lt;/b&gt; on line &lt;b&gt;132&lt;/b&gt;&lt;br /&gt;
+        &lt;/div&gt;
+    &lt;footer&gt;
+    &lt;/footer&gt;
+&lt;script id=&quot;__debug_kit&quot; data-id=&quot;946fcc3d-9f09-4280-b5af-a2ab0a58d07a&quot; data-url=&quot;http://localhost:8765/&quot; src=&quot;/debug_kit/js/toolbar.js?1570586134&quot;&gt;&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+&#039;
+
+}
+$cookies = []
+$values = [
+	(int) 0 =&gt; &#039;946fcc3d-9f09-4280-b5af-a2ab0a58d07a&#039;
+]
+$name = &#039;X-DEBUGKIT-ID&#039;
+$first = true
+$value = &#039;946fcc3d-9f09-4280-b5af-a2ab0a58d07a&#039;</pre><pre class="stack-trace">Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 185
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40</pre></div></pre><br />
+<b>Warning</b>:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [<a href='https://secure.php.net/function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in <b>/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php</b> on line <b>132</b><br />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Files Manager:
+        Files    </title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"/><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="/css/base.css"/>    <link rel="stylesheet" href="/css/style.css"/>
+            </head>
+<body>
+    <nav class="top-bar expanded" data-topbar role="navigation">
+        <ul class="title-area large-2 medium-4 columns">
+            <li class="name">
+                <h1><a href="">Files Manager</a></h1>
+            </li>
+        </ul>
+        <div class="top-bar-section">
+            <ul class="right">
+
+                                    <li><a  href="">ahmed</a></li>
+                    <li><a  href="/auth/logout">Logout</a></li>
+                            </ul>
+        </div>
+    </nav>
+        <div class="container clearfix">
+        <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe7996192-trace').style.display = (document.getElementById('cakeErr5daefe7996192-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: readfile(Employee Information - Shawky.pdf) [&lt;a href=&#039;https://secure.php.net/function.readfile&#039;&gt;function.readfile&lt;/a&gt;]: failed to open stream: No such file or directory [<b>APP/Template/Files/view.ctp</b>, line <b>26</b>]<div id="cakeErr5daefe7996192-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe7996192-code').style.display = (document.getElementById('cakeErr5daefe7996192-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5daefe7996192-context').style.display = (document.getElementById('cakeErr5daefe7996192-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr5daefe7996192-code" class="cake-code-dump" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">)&nbsp;{</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$previousHandler</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$line</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$context</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></pre><pre id="cakeErr5daefe7996192-context" class="cake-context" style="display: none;">$viewFile = &#039;/var/www/html/file_manager/FileManager/src/Template/Files/view.ctp&#039;
+$dataForView = [
+	&#039;file&#039; =&gt; object(App\Model\Entity\File) {
+
+		&#039;id&#039; =&gt; (int) 8,
+		&#039;name&#039; =&gt; &#039;Employee Information - Shawky.pdf&#039;,
+		&#039;path&#039; =&gt; &#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&#039;,
+		&#039;user_id&#039; =&gt; (int) 1,
+		&#039;created&#039; =&gt; object(Cake\I18n\FrozenTime) {},
+		&#039;modified&#039; =&gt; object(Cake\I18n\FrozenTime) {},
+		&#039;user&#039; =&gt; object(App\Model\Entity\User) {},
+		&#039;[new]&#039; =&gt; false,
+		&#039;[accessible]&#039; =&gt; [
+			[maximum depth reached]
+		],
+		&#039;[dirty]&#039; =&gt; [[maximum depth reached]],
+		&#039;[original]&#039; =&gt; [[maximum depth reached]],
+		&#039;[virtual]&#039; =&gt; [[maximum depth reached]],
+		&#039;[hasErrors]&#039; =&gt; false,
+		&#039;[errors]&#039; =&gt; [[maximum depth reached]],
+		&#039;[invalid]&#039; =&gt; [[maximum depth reached]],
+		&#039;[repository]&#039; =&gt; &#039;Files&#039;
+	
+	},
+	&#039;type&#039; =&gt; (int) 3
+]
+$file = object(App\Model\Entity\File) {
+
+	&#039;id&#039; =&gt; (int) 8,
+	&#039;name&#039; =&gt; &#039;Employee Information - Shawky.pdf&#039;,
+	&#039;path&#039; =&gt; &#039;/var/www/html/file_manager/FileManager/webroot//upload/files/&#039;,
+	&#039;user_id&#039; =&gt; (int) 1,
+	&#039;created&#039; =&gt; object(Cake\I18n\FrozenTime) {},
+	&#039;modified&#039; =&gt; object(Cake\I18n\FrozenTime) {},
+	&#039;user&#039; =&gt; object(App\Model\Entity\User) {},
+	&#039;[new]&#039; =&gt; false,
+	&#039;[accessible]&#039; =&gt; [
+		&#039;name&#039; =&gt; true,
+		&#039;path&#039; =&gt; true,
+		&#039;user_id&#039; =&gt; true,
+		&#039;created&#039; =&gt; true,
+		&#039;modified&#039; =&gt; true,
+		&#039;user&#039; =&gt; true
+	],
+	&#039;[dirty]&#039; =&gt; [],
+	&#039;[original]&#039; =&gt; [],
+	&#039;[virtual]&#039; =&gt; [],
+	&#039;[hasErrors]&#039; =&gt; false,
+	&#039;[errors]&#039; =&gt; [],
+	&#039;[invalid]&#039; =&gt; [],
+	&#039;[repository]&#039; =&gt; &#039;Files&#039;
+
+}
+$type = (int) 3</pre><pre class="stack-trace">Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 42
+readfile - [internal], line ??
+include - APP/Template/Files/view.ctp, line 26
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 1418
+Cake\View\View::_render() - CORE/src/View/View.php, line 1379
+Cake\View\View::render() - CORE/src/View/View.php, line 879
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 795
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 234
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65</pre></div></pre><br />
+<b>Warning</b>:  file_put_contents(/var/www/html/file_manager/FileManager/logs/error.log) [<a href='https://secure.php.net/function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied in <b>/var/www/html/file_manager/FileManager/vendor/cakephp/cakephp/src/Log/Engine/FileLog.php</b> on line <b>132</b><br />
+        </div>
+    <footer>
+    </footer>
+<script id="__debug_kit" data-id="946fcc3d-9f09-4280-b5af-a2ab0a58d07a" data-url="http://localhost:8765/" src="/debug_kit/js/toolbar.js?1570586134"></script></body>
+</html>

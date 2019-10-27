@@ -35,22 +35,46 @@ $title = 'Files Manager';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
+    <?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')?>
+    <?= $this->Html->script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')?>
     <?= $this->Html->script('bootstrap.js') ?>
+    <?= $this->Html->script('app.js') ?>
+    <?= $this->Html->script('notify.js') ?>
+
+
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-2 medium-4 columns">
             <li class="name">
                 <h1><a href="/files"><?= __('msg') ?></a></h1>
+
             </li>
+
         </ul>
+
+
+
         <div class="top-bar-section">
+
             <ul class="right">
 
                 <?php if ($this->request->session()->read('Auth.User')):?>
-                    <li><span class="fa fa-globe text-white p-3 "></span></li>
+
+
+                    <li>
+                        <a class=" dropdown-toggle"  id="navbarDropdownMenuLink-5" data-toggle="dropdown" >
+                            <span class="badge badge-danger">4</span>
+                            <i class="fa fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink-5">
+                            <a class="dropdown-item" style="background: white" href="#">Action </a>
+
+                        </div>
+                    </li>
                     <li><a  href=""><?= $this->request->session()->read('Auth.User.username')?></a></li>
-                    <li><a  href="/auth/logout">Logout</a></li>
+                    <li><a  href="/auth/logout"> <?= __('Logout') ?></a></li>
                 <?php endif;?>
             </ul>
         </div>
@@ -60,8 +84,8 @@ $title = 'Files Manager';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
-        <?php echo $this->Form->create('Localizations',array('url'=>'/locale'));?>
-        <?php echo $this->Form->button('Arabic',['type'=>'Submit','name'=>'locale','value'=>"ar_JO"]); ?>
+        <?= $this->Html->link('Arabic', ['controller'=>'App','action' => 'changeLang','ar_JO'],['class'=>'btn btn-success']); ?>
+        <?= $this->Html->link('English', ['controller'=>'App','action' => 'changeLang','en_US'],['class'=>'btn btn-primary']); ?>
     </footer>
 </body>
 </html>
